@@ -63,5 +63,5 @@ if($_FILES) {
 	$connect->close();
 
 	echo json_encode($valid);
-
+ 
 } // /if $_POST

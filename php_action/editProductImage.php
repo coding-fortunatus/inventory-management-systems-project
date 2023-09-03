@@ -7,7 +7,7 @@ $valid['success'] = array('success' => false, 'messages' => array());
 if($_POST) {		
 
 $productId = $_POST['productId'];
-
+ 
 $type = explode('.', $_FILES['editProductImage']['name']);
 	$type = $type[count($type)-1];		
 	$url = '../assests/images/stock/'.uniqid(rand()).'.'.$type;
@@ -29,9 +29,9 @@ $type = explode('.', $_FILES['editProductImage']['name']);
 			}	// /else	
 		} // if
 	} // if in_array 		
-
+	 
 	$connect->close();
 
 	echo json_encode($valid);
-
+ 
 } // /if $_POST

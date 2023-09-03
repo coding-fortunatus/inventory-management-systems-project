@@ -26,12 +26,12 @@ $gstn = $orderData[11];
 $orderItemSql = "SELECT order_item.product_id, order_item.rate, order_item.quantity, order_item.total,
 product.product_name FROM order_item
    INNER JOIN product ON order_item.product_id = product.product_id 
-   WHERE order_item.order_id = $orderId";
+ WHERE order_item.order_id = $orderId";
 $orderItemResult = $connect->query($orderItemSql);
 
-$table = '<style>
+ $table = '<style>
 .star img {
-   visibility: visible;
+    visibility: visible;
 }</style>
 <table align="center" cellpadding="0" cellspacing="0" style="width: 100%;border:1px solid black;margin-bottom: 10px;">
                <tbody>
@@ -141,7 +141,7 @@ $table = '<style>
                ';
             $x++;
             } // /while
-               $table.= '
+                $table.= '
                   <tr style="border-bottom: 1px solid black;">
                      <td style="border-left: 1px solid black;border-right: 1px solid black;height: 27px;"></td>
                      <td style="border-left: 1px solid black;height: 27px;"></td>

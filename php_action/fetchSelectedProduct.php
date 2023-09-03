@@ -8,7 +8,7 @@ $sql = "SELECT product_id, product_name, product_image, brand_id, categories_id,
 $result = $connect->query($sql);
 
 if($result->num_rows > 0) { 
-    $row = $result->fetch_array();
+ $row = $result->fetch_array();
 } // if num_rows
 
 $connect->close();

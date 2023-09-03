@@ -159,7 +159,7 @@
                     <button type="button" class="btn btn-default" data-dismiss="modal"> <i
                             class="glyphicon glyphicon-remove-sign"></i> Close</button>
 
-                    <button type="submit" class="btn btn-primary" id="createProductBtn" data-loading-text="Loading..."
+                    <button type="submit" class="btn btn-primary" id="createProductBtn" data-loading-text="Loading"
                         autocomplete="off"> <i class="glyphicon glyphicon-ok-sign"></i> Save Changes</button>
                 </div> <!-- /modal-footer -->
             </form> <!-- /.form -->

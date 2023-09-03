@@ -8,7 +8,7 @@ $sql = "SELECT brand_id, brand_name, brand_active, brand_status FROM brands WHER
 $result = $connect->query($sql);
 
 if($result->num_rows > 0) { 
-    $row = $result->fetch_array();
+ $row = $result->fetch_array();
 } // if num_rows
 
 $connect->close();

@@ -1,8 +1,4 @@
-<?php require_once 'php_action/core.php'; 
-require_once 'php_action/db_connect.php';
-
-?>
-
+<?php require_once 'php_action/core.php'; ?>
 
 <!DOCTYPE html>
 <html>
@@ -53,8 +49,8 @@ require_once 'php_action/db_connect.php';
                     <span class="icon-bar"></span>
                 </button>
                 <!-- <a class="navbar-brand" href="#">Brand</a> -->
-                <a class="navbar-brand" href="<?php echo $store_url; ?>" style="padding:0px;">
-                    <img src="logo.png" alt="">
+                <a class="navbar-brand" href="#" style="padding:0px;">
+                    <img src="logo.png" alt="" width="70rem">
                 </a>
             </div>
 
