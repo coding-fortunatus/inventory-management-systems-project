@@ -7,13 +7,13 @@ $valid['success'] = array('success' => false, 'messages' => array());
 
 if($_POST) {	
 
-	$productName 		= $_POST['productName'];
-  // $productImage 	= $_POST['productImage'];
-  $quantity 			= $_POST['quantity'];
-  $rate 					= $_POST['rate'];
-  $brandName 			= $_POST['brandName'];
-  $categoryName 	= $_POST['categoryName'];
-  $productStatus 	= $_POST['productStatus'];
+	$productName 	= $_POST['productName'];
+	// $productImage 	= $_POST['productImage'];
+	$quantity 		= $_POST['quantity'];
+	$rate 			= $_POST['rate'];
+	$brandName 		= $_POST['brandName'];
+	$categoryName 	= $_POST['categoryName'];
+	$productStatus 	= $_POST['productStatus'];
 
 	$type = explode('.', $_FILES['productImage']['name']);
 	$type = $type[count($type)-1];		

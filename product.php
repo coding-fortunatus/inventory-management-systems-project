@@ -28,7 +28,7 @@
                         <tr>
                             <th style="width:10%;">Photo</th>
                             <th>Product Name</th>
-                            <th>Rate</th>
+                            <th>Rate (₦)</th>
                             <th>Quantity</th>
                             <th>Brand</th>
                             <th>Category</th>
@@ -95,7 +95,7 @@
                     </div> <!-- /form-group-->
 
                     <div class="form-group">
-                        <label for="rate" class="col-sm-3 control-label">Rate: </label>
+                        <label for="rate" class="col-sm-3 control-label">Rate (₦): </label>
                         <label class="col-sm-1 control-label">: </label>
                         <div class="col-sm-8">
                             <input type="text" class="form-control" id="rate" placeholder="Rate" name="rate"
@@ -109,15 +109,14 @@
                         <div class="col-sm-8">
                             <select class="form-control" id="brandName" name="brandName">
                                 <option value="">~~SELECT~~</option>
-                                <?php 
-				      	$sql = "SELECT brand_id, brand_name, brand_active, brand_status FROM brands WHERE brand_status = 1 AND brand_active = 1";
-								$result = $connect->query($sql);
+                                <?php
+                                    $sql = "SELECT brand_id, brand_name, brand_active, brand_status FROM brands WHERE brand_status = 1 AND brand_active = 1";
+                                    $result = $connect->query($sql);
 
-								while($row = $result->fetch_array()) {
-									echo "<option value='".$row[0]."'>".$row[1]."</option>";
-								} // while
-								
-				      	?>
+                                    while($row = $result->fetch_array()) {
+                                        echo "<option value='".$row[0]."'>".$row[1]."</option>";
+                                    } // while
+								?>
                             </select>
                         </div>
                     </div> <!-- /form-group-->
@@ -159,7 +158,7 @@
                     <button type="button" class="btn btn-default" data-dismiss="modal"> <i
                             class="glyphicon glyphicon-remove-sign"></i> Close</button>
 
-                    <button type="submit" class="btn btn-primary" id="createProductBtn" data-loading-text="Loading"
+                    <button type="submit" class="btn btn-primary" id="createProductBtn" data-loading-text="Loading..."
                         autocomplete="off"> <i class="glyphicon glyphicon-ok-sign"></i> Save Changes</button>
                 </div> <!-- /modal-footer -->
             </form> <!-- /.form -->
@@ -268,7 +267,7 @@
                                 </div> <!-- /form-group-->
 
                                 <div class="form-group">
-                                    <label for="editRate" class="col-sm-3 control-label">Rate: </label>
+                                    <label for="editRate" class="col-sm-3 control-label">Rate (₦): </label>
                                     <label class="col-sm-1 control-label">: </label>
                                     <div class="col-sm-8">
                                         <input type="text" class="form-control" id="editRate" placeholder="Rate"
